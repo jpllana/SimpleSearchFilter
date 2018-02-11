@@ -1,0 +1,22 @@
+.table > thead > tr > th{
+    text-align: left !important;
+}
+.table > tbody > tr > td{
+    text-align: left !important;
+}
+
+section.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+.btn-primary{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+.container div.col-sm-4 {
+    right: 10%;
+}

@@ -1,0 +1,44 @@
+<div style="text-align:center">
+  <h1>
+    Project Search
+  </h1>
+  <br/>
+  <section class="container">
+    <div class="row-max">
+      <div class="col-sm-8">
+          <input class="form-control" type="text" (keyup.enter)="searchBtn($event.target.value)" #searchValue/>
+      </div>
+      <div class="col-sm-4">
+          <button class="btn btn-primary" (click)="searchBtn(searchValue.value)">Search</button>
+      </div>
+    </div>
+    <div class="row-max">
+      <div class="col-sm-12">
+        <div class="tablewrap">
+          <div class="tablewrapinner">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <!-- <th>Description</th> -->
+                      <th>Title</th>
+                      <th>Published Date</th>
+                      <th>Project Volume</th>
+                      <th>End Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let item of constructionsProject">
+                      <!-- <td>{{item.description}}</td> -->
+                      <td>{{item.title}}</td>
+                      <td>{{item.source_published_date}}</td>
+                      <td>{{item.project_volume}}</td>
+                      <td>{{item.construction_end_date}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>  
+</section>
+</div>
